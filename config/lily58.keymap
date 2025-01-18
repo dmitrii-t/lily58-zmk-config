@@ -34,6 +34,14 @@
             tapping-term-ms = <200>;
             bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
         };
+
+        td_cbrces: td_cbrces {
+            compatible = "zmk,behavior-tap-dance";
+            label = "{}";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
+        };
     };
 
     macros {
@@ -72,27 +80,37 @@
 &kp TAB       &kp Q        &kp W                &kp E         &kp R                &kp T                                    &kp Y        &kp U                 &kp I          &kp O                 &kp P                &kp DOLLAR
 &kp CAPSLOCK  &hrm LALT A  &hrm LEFT_CONTROL S  &hrm LSHFT D  &hrm LEFT_COMMAND F  &kp G                                    &kp H        &hrm RIGHT_COMMAND J  &hrm RSHIFT K  &hrm RIGHT_CONTROL L  &hrm RALT SEMICOLON  &kp SQT
 &scrshot      &kp Z        &kp X                &kp C         &kp V                &kp B        &td_brackets     &td_prnts  &kp N        &kp M                 &kp COMMA      &kp DOT               &kp FSLH             &kp MINUS
-                                                &none         &none                &lt 1 SPACE  &kp BACKSPACE    &kp RET    &lt 2 SPACE  &none                 &none
+                                                &none         &mo 3                &lt 1 SPACE  &kp BACKSPACE    &kp RET    &lt 2 SPACE  &none                 &none
             >;
         };
 
         right_half_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans          &trans        &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &td_prnts       &td_cbrces      &trans        &trans           &trans  &td_brackets
 &trans  &trans  &trans  &trans  &trans  &trans                    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans  &trans
                         &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans
             >;
         };
 
         left_half_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans         &trans     &trans            &trans           &trans      &trans                           &trans        &trans     &trans        &trans         &trans  &trans
+&trans         &kp TILDE  &kp HASH          &kp CARET        &kp DOLLAR  &kp BACKSLASH                    &kp ASTERISK  &kp SLASH  &kp COMMA     &trans         &trans  &trans
+&kp LESS_THAN  &kp MINUS  &kp GREATER_THAN  &kp EXCLAMATION  &kp EQUAL   &kp AMPERSAND                    &kp MINUS     &kp PLUS   &kp PERIOD    &kp SEMICOLON  &trans  &trans
+&trans         &trans     &kp AT_SIGN       &kp PERCENT      &kp UNDER   &kp PIPE       &trans    &trans  &trans        &kp COLON  &kp ASTERISK  &trans         &trans  &trans
+                                            &trans           &trans      &trans         &trans    &trans  &trans        &trans     &trans
+            >;
+        };
+
+        numpad_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans        &trans  &trans      &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp ASTERISK  &kp N7  &kp N8      &kp N9  &kp MINUS  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp SLASH     &kp N4  &kp N5      &kp N6  &kp PLUS   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp EQUAL     &kp N1  &kp N2      &kp N3  &kp ENTER  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans        &kp N0  &kp PERIOD
             >;
         };
     };
