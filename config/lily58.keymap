@@ -125,8 +125,8 @@
             bindings = <
 &trans         &trans         &trans            &trans          &trans      &trans                           &trans     &trans     &trans      &trans        &trans     &trans
 &trans         &kp TILDE      &kp HASH          &kp EXCL        &kp EQUAL   &kp DOT                          &kp GRAVE  &td_prnts  &td_cbrces  &td_brackets  &trans     &trans
-&kp LESS_THAN  &kp MINUS      &kp GREATER_THAN  &kp UNDERSCORE  &kp DOLLAR  &kp AMPERSAND                    &kp ASTRK  &kp SEMI   &kp COLON   &kp PLUS      &kp SLASH  &trans
-&trans         &kp BACKSLASH  &kp AT_SIGN       &kp PERCENT     &kp CARET   &kp PIPE       &trans    &trans  &trans     &trans     &trans      &trans        &trans     &trans
+&kp LESS_THAN  &kp MINUS      &kp GREATER_THAN  &kp UNDERSCORE  &kp DOLLAR  &kp AMPERSAND                    &kp COMMA  &kp SEMI   &kp COLON   &kp PLUS      &kp SLASH  &trans
+&trans         &kp BACKSLASH  &kp AT_SIGN       &kp PERCENT     &kp CARET   &kp PIPE       &trans    &trans  &trans     &trans     &trans      &kp ASTRK     &trans     &trans
                                                 &trans          &trans      &trans         &trans    &trans  &trans     &trans     &trans
             >;
         };
