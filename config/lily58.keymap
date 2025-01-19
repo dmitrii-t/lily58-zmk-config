@@ -123,11 +123,11 @@
 
         left_half_layer {
             bindings = <
-&trans         &trans     &trans            &trans           &trans      &trans                           &trans        &trans     &trans        &trans         &trans  &trans
-&trans         &kp TILDE  &kp HASH          &kp CARET        &kp DOLLAR  &kp BACKSLASH                    &kp ASTERISK  &kp SLASH  &kp COMMA     &kp GRAVE      &trans  &trans
-&kp LESS_THAN  &kp MINUS  &kp GREATER_THAN  &kp EXCLAMATION  &kp EQUAL   &kp AMPERSAND                    &kp MINUS     &kp PLUS   &kp PERIOD    &kp SEMICOLON  &trans  &trans
-&trans         &trans     &kp AT_SIGN       &kp PERCENT      &kp UNDER   &kp PIPE       &trans    &trans  &trans        &trans     &kp ASTERISK  &kp COLON      &trans  &trans
-                                            &trans           &trans      &trans         &trans    &trans  &trans        &trans     &trans
+&trans         &trans         &trans            &trans          &trans      &trans                           &trans     &trans     &trans      &trans        &trans     &trans
+&trans         &kp TILDE      &kp HASH          &kp EXCL        &kp EQUAL   &kp DOT                          &kp GRAVE  &td_prnts  &td_cbrces  &td_brackets  &trans     &trans
+&kp LESS_THAN  &kp MINUS      &kp GREATER_THAN  &kp UNDERSCORE  &kp DOLLAR  &kp AMPERSAND                    &kp ASTRK  &kp SEMI   &kp COLON   &kp PLUS      &kp SLASH  &trans
+&trans         &kp BACKSLASH  &kp AT_SIGN       &kp PERCENT     &kp CARET   &kp PIPE       &trans    &trans  &trans     &trans     &trans      &trans        &trans     &trans
+                                                &trans          &trans      &trans         &trans    &trans  &trans     &trans     &trans
             >;
         };
 
