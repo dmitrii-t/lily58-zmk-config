@@ -113,11 +113,11 @@
 
         right_half_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans          &trans        &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &td_prnts       &td_cbrces      &trans        &trans           &trans  &td_brackets
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                            &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                            &td_prnts       &td_cbrces      &trans        &trans           &trans  &td_brackets
+&trans  &trans  &trans  &trans  &trans  &trans                            &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans          &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans  &trans
+                        &trans  &trans  &trans  &trans    &kp LEFT_SHIFT  &trans          &trans          &trans
             >;
         };
 
