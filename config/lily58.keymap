@@ -93,11 +93,11 @@
 
         default_mac_layer {
             bindings = <
-&none       &none        &none                &none         &none                &none                                    &none        &none                 &none          &none                 &none                &none
-&kp TAB     &kp Q        &kp W                &kp E         &kp R                &kp T                                    &kp Y        &kp U                 &kp I          &kp O                 &kp P                &kp LEFT_BRACKET
-&kp ESCAPE  &hrm LALT A  &hrm LEFT_CONTROL S  &hrm LSHFT D  &hrm LEFT_COMMAND F  &kp G                                    &kp H        &hrm RIGHT_COMMAND J  &hrm RSHIFT K  &hrm RIGHT_CONTROL L  &hrm RALT SEMICOLON  &kp SQT
-&scrshot    &kp Z        &kp X                &kp C         &kp V                &kp B        &tog_off 1       &tog_on 1  &kp N        &kp M                 &kp COMMA      &kp DOT               &kp FSLH             &caps_word
-                                              &none         &mo 4                &lt 2 SPACE  &kp BACKSPACE    &kp RET    &lt 3 SPACE  &none                 &none
+&none       &none        &none                &none         &none                &none                                 &none        &none                 &none          &none                 &none                &none
+&kp TAB     &kp Q        &kp W                &kp E         &kp R                &kp T                                 &kp Y        &kp U                 &kp I          &kp O                 &kp P                &kp LEFT_BRACKET
+&kp ESCAPE  &hrm LALT A  &hrm LEFT_CONTROL S  &hrm LSHFT D  &hrm LEFT_COMMAND F  &kp G                                 &kp H        &hrm RIGHT_COMMAND J  &hrm RSHIFT K  &hrm RIGHT_CONTROL L  &hrm RALT SEMICOLON  &kp SQT
+&scrshot    &kp Z        &kp X                &kp C         &kp V                &kp B        &tog_off 1    &tog_on 1  &kp N        &kp M                 &kp COMMA      &kp DOT               &kp FSLH             &caps_word
+                                              &none         &mo 4                &lt 3 SPACE  &kp LSHIFT    &kp RET    &lt 2 SPACE  &none                 &none
             >;
         };
 
@@ -113,21 +113,21 @@
 
         right_half_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                            &trans          &trans          &trans        &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                            &td_prnts       &td_cbrces      &trans        &trans           &trans  &td_brackets
-&trans  &trans  &trans  &trans  &trans  &trans                            &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans          &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans  &trans
-                        &trans  &trans  &trans  &trans    &kp LEFT_SHIFT  &trans          &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &td_prnts       &td_cbrces      &trans        &trans           &trans  &td_brackets
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans
             >;
         };
 
         left_half_layer {
             bindings = <
-&trans         &trans         &trans            &trans          &trans      &trans                           &trans     &trans     &trans      &trans        &trans     &trans
-&trans         &kp TILDE      &kp HASH          &kp EXCL        &kp EQUAL   &kp DOT                          &kp GRAVE  &td_prnts  &td_cbrces  &td_brackets  &trans     &trans
-&kp LESS_THAN  &kp MINUS      &kp GREATER_THAN  &kp UNDERSCORE  &kp DOLLAR  &kp AMPERSAND                    &kp COMMA  &kp SEMI   &kp COLON   &kp PLUS      &kp SLASH  &trans
-&trans         &kp BACKSLASH  &kp AT_SIGN       &kp PERCENT     &kp CARET   &kp PIPE       &trans    &trans  &trans     &trans     &trans      &kp ASTRK     &trans     &trans
-                                                &trans          &trans      &trans         &trans    &trans  &trans     &trans     &trans
+&trans         &trans         &trans            &trans          &trans      &trans                                  &trans     &trans     &trans      &trans        &trans     &trans
+&trans         &kp TILDE      &kp HASH          &kp EXCL        &kp EQUAL   &kp DOT                                 &kp GRAVE  &td_prnts  &td_cbrces  &td_brackets  &trans     &trans
+&kp LESS_THAN  &kp MINUS      &kp GREATER_THAN  &kp UNDERSCORE  &kp DOLLAR  &kp AMPERSAND                           &kp COMMA  &kp SEMI   &kp COLON   &kp PLUS      &kp SLASH  &trans
+&trans         &kp BACKSLASH  &kp AT_SIGN       &kp PERCENT     &kp CARET   &kp PIPE       &trans    &trans         &trans     &trans     &trans      &kp ASTRK     &trans     &trans
+                                                &trans          &trans      &trans         &trans    &kp BACKSPACE  &trans     &trans     &trans
             >;
         };
 
@@ -137,7 +137,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &kp ASTERISK  &kp N7  &kp N8      &kp N9  &kp MINUS  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &kp SLASH     &kp N4  &kp N5      &kp N6  &kp PLUS   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp EQUAL     &kp N1  &kp N2      &kp N3  &kp ENTER  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans        &kp N0  &kp PERIOD
+                        &trans  &trans  &trans  &trans    &trans  &kp N0        &trans  &kp PERIOD
             >;
         };
     };
