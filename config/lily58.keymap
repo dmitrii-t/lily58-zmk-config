@@ -116,18 +116,18 @@
 &trans  &trans  &trans  &trans  &trans  &trans                           &trans          &trans          &trans        &trans           &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                           &td_prnts       &td_cbrces      &trans        &trans           &trans  &td_brackets
 &trans  &trans  &trans  &trans  &trans  &trans                           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans  &trans
-                        &trans  &trans  &trans  &kp BACKSPACE    &trans  &trans          &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &trans    &trans  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans  &trans
+                        &trans  &trans  &kp BACKSPACE  &trans    &trans  &trans          &trans          &trans
             >;
         };
 
         left_half_layer {
             bindings = <
-&trans         &trans         &trans            &trans          &trans      &trans                           &trans     &trans     &trans      &trans        &trans     &trans
-&trans         &kp TILDE      &kp HASH          &kp EXCL        &kp EQUAL   &kp DOT                          &kp GRAVE  &td_prnts  &td_cbrces  &td_brackets  &trans     &trans
-&kp LESS_THAN  &kp MINUS      &kp GREATER_THAN  &kp UNDERSCORE  &kp DOLLAR  &kp AMPERSAND                    &kp COMMA  &kp SEMI   &kp COLON   &kp PLUS      &kp SLASH  &trans
-&trans         &kp BACKSLASH  &kp AT_SIGN       &kp PERCENT     &kp CARET   &kp PIPE       &trans    &trans  &trans     &trans     &trans      &kp ASTRK     &trans     &trans
-                                                &trans          &trans      &trans         &trans    &trans  &trans     &trans     &trans
+&trans         &trans         &trans            &trans          &trans      &trans                           &trans                &trans                 &trans          &trans     &trans            &trans
+&trans         &kp TILDE      &kp HASH          &kp EXCL        &kp EQUAL   &kp DOT                          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RBRC   &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp LESS_THAN  &kp MINUS      &kp GREATER_THAN  &kp UNDERSCORE  &kp DOLLAR  &kp AMPERSAND                    &kp COMMA             &kp SEMI               &kp COLON       &kp PLUS   &kp SLASH         &trans
+&trans         &kp BACKSLASH  &kp AT_SIGN       &kp PERCENT     &kp CARET   &kp PIPE       &trans    &trans  &trans                &trans                 &trans          &kp ASTRK  &trans            &trans
+                                                &trans          &trans      &trans         &trans    &trans  &trans                &trans                 &trans
             >;
         };
 
