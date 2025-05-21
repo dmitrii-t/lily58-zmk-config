@@ -97,7 +97,7 @@
 &kp TAB     &kp Q        &kp W                &kp E         &kp R                &kp T                                    &kp Y        &kp U                 &kp I          &kp O                 &kp P                &kp LEFT_BRACKET
 &kp ESCAPE  &hrm LALT A  &hrm LEFT_CONTROL S  &hrm LSHFT D  &hrm LEFT_COMMAND F  &kp G                                    &kp H        &hrm RIGHT_COMMAND J  &hrm RSHIFT K  &hrm RIGHT_CONTROL L  &hrm RALT SEMICOLON  &kp SQT
 &scrshot    &kp Z        &kp X                &kp C         &kp V                &kp B        &tog_off 1       &tog_on 1  &kp N        &kp M                 &kp COMMA      &kp DOT               &kp FSLH             &caps_word
-                                              &none         &mo 4                &lt 3 SPACE  &kp BACKSPACE    &kp RET    &lt 2 SPACE  &none                 &none
+                                              &none         &mo 4                &lt 3 SPACE  &kp BACKSPACE    &kp RET    &lt 2 SPACE  &kp CAPSLOCK          &none
             >;
         };
 
@@ -114,9 +114,9 @@
         right_half_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                           &trans          &trans          &trans        &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                           &td_prnts       &td_cbrces      &trans        &trans           &trans  &td_brackets
-&trans  &trans  &trans  &trans  &trans  &trans                           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans         &trans    &trans  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans  &trans
+&trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10                          &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11                          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12        &trans    &trans  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans  &trans
                         &trans  &trans  &kp BACKSPACE  &trans    &trans  &trans          &trans          &trans
             >;
         };
